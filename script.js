@@ -220,5 +220,41 @@ six.addEventListener("click", ()=> {
 })
 
 seven.addEventListener("click", ()=>{
-    inputScreen.innerText += arrayOfObjectKeys[10]["button value"]
+    inputScreen.innerText += arrayOfObjectKeys[10]["button value"];
 })
+eight.addEventListener("click", ()=>{
+    inputScreen.innerText += arrayOfObjectKeys[11]["button value"];
+})
+nine.addEventListener("click", ()=>{
+    inputScreen.innerText += arrayOfObjectKeys[12]["button value"];
+})
+zero.addEventListener("click", ()=> {
+    inputScreen.innerText += arrayOfObjectKeys[13]["button value"];
+})
+
+//events for aritmatic operators
+minus.addEventListener("click", ()=> {
+    inputScreen.innerText += arrayOfObjectKeys[14]["button value"];
+})
+equal.addEventListener("click", ()=> {
+   // inputScreen.innerText += arrayOfObjectKeys[15]["button value"];
+
+   //I need code that will perfom operations when i run this code bloc.
+   let output =  inputScreen.innerText.split("");
+   const regex = /\+\-*/gi
+   console.log(output)
+   let value = parseInt(output[0])
+   console.log(value)
+})
+plus.addEventListener("click", ()=> {
+    inputScreen.innerText += arrayOfObjectKeys[16]["button value"];
+})
+division.addEventListener("click", ()=>{
+    inputScreen.innerText += arrayOfObjectKeys[17]["button value"];
+})
+multiply.addEventListener("click", ()=>{
+    inputScreen.innerText += arrayOfObjectKeys[arrayOfObjectKeys.length - 1]["button value"]
+})
+//end of event handles....
+
+//
