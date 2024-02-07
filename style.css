@@ -1,0 +1,340 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+:root {
+   --body-color: rgb(6, 6, 109);
+   --button-colot: rgb(115, 176, 233);
+   --boder-body: 5px solid #000000;
+   --screen-color:  rgba(110, 174, 190, 0.734);
+   --body-radius: 20px;
+   --button-radius: 10px;
+   --screen-radius: 10px;
+   --screen-border: 5px solid black;
+   --screen-button: 1px solid black;
+   --function-button-color: #53514f8f;
+   --text-function-color: #ffffff;
+
+}
+
+.container {
+    position: relative;
+    max-width: 660px;
+    height: 100%;
+    margin: 100px 100px;
+    left: 150px;
+}
+
+.calculator-body {
+    position: absolute;
+    width: 340px;
+    height: 590px;
+    max-width: 400px;
+    background-color: var(--body-color);
+    border: var(--boder-body);
+    border-radius: var(--body-radius);
+    margin: auto;
+
+}
+
+.screen {
+    width: 300px;
+    height: 100px;
+    background-color: var(--screen-color);
+    position: absolute;
+    margin: 20px 20px;
+    padding-right: 10px;
+    border: var(--screen-border);
+    border-radius: var(--screen-radius);
+    top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.output-value {
+    font-size: 2rem;
+   /* position: absolute; */
+    top: 60px;
+    left: 10px;
+    overflow: hidden;
+ /* display: none; */
+    visibility: hidden ; 
+    
+}
+
+.resultant {
+    font-size: 2rem;
+    visibility: hidden;
+    margin-top: 50px;
+    margin-left: 210px;
+}
+
+.button {
+    height: 45px;
+    width: 45px;
+    background-color: var(--button-colot);
+    margin: 7px;
+    border: var(--screen-button);
+    position: absolute;
+    border-radius: var(--button-radius);
+    font-weight: bolder;
+}
+
+.clear {
+    top: 180px;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: white;
+}
+
+.square-root {
+    top: 180px;
+    left: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--function-button-color);
+    color: var(--text-function-color);
+}
+
+.percentage {
+    top: 180px;
+    left: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--function-button-color);
+    color: var(--text-function-color);
+    
+}
+
+.on-off {
+    top: 180px;
+    left: 253px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: red;
+}
+.on {
+    color: var(--text-function-color);
+    margin-bottom: -20px; 
+}
+.one {
+    top: 250px;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.two{
+    top: 250px;
+    left: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.three {
+    top: 250px;
+    left: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.four {
+    top: 320px;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;display: flex;
+    
+}
+
+.five {
+    top: 320px;
+    left: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.six {
+    top: 320px;
+    left: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seven {
+    top: 399px;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eight {
+    top: 399px;
+    left: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nine {
+    top: 399px;
+    left: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zero {
+    top: 480px;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.multiply {
+    top: 250px;
+    left: 253px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--function-button-color);
+    color: var(--text-function-color);
+}
+
+.division {
+    top: 320px;
+    left: 253px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--function-button-color);
+    color: var(--text-function-color);
+}
+
+.plus {
+    height: 150px;
+    top: 399px;
+    left: 253px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--function-button-color);
+    color: var(--text-function-color);
+}
+
+.minus {
+    top: 480px;
+    left: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--function-button-color);
+    color: var(--text-function-color);
+}
+
+
+
+.equal {
+    top: 480px;
+    left: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--function-button-color);
+    color: var(--text-function-color);
+}
+
+
+
+@media only screen and (max-width: 742px) {
+    .container {
+        top: 200px;
+        left: -100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 740px) {
+    .container {
+        top: 200px;
+        left: -50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        left: -30px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 565px) {
+    .container {
+        left: -10px;
+    
+    }
+    
+}
+
+
+@media only screen and (max-width: 857px) {
+    .container {
+        left: 30px;
+    
+    
+    }
+    
+}
+
+.button:hover {
+    box-shadow: 2px 2px 10px blue, 2px 2px 10px  blue ;
+}
+
+/*
+@media only screen and (max-width:470px ) {
+   .container {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        left: 0;
+
+    }
+  
+    .calculator-body {
+    width: 300px;
+    height: 420px;
+
+    }
+  
+}
+
+
+@media only screen and (max-width: 225px) {
+    .container {
+        margin-left: 0px;
+    }
+
+}
+
+*/
