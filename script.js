@@ -196,7 +196,7 @@ function clearFunct() {
 //end of function buuttons
 
 //numerals
-
+//event listners for numetal buttons
 one.addEventListener("click", ()=> {
     inputScreen.innerText += arrayOfObjectKeys[4]["button value"];
     rejectOperation();
@@ -208,4 +208,17 @@ two.addEventListener("click", ()=>{
 three.addEventListener("click", ()=>{
     inputScreen.innerText += arrayOfObjectKeys[6]["button value"];
     rejectOperation()
+})
+four.addEventListener("click", ()=>{
+    inputScreen.innerText += arrayOfObjectKeys[7]["button value"];
+})
+five.addEventListener("click", ()=>{
+    inputScreen.innerText += arrayOfObjectKeys[8]["button value"];
+})
+six.addEventListener("click", ()=> {
+    inputScreen.innerText += arrayOfObjectKeys[9]["button value"];
+})
+
+seven.addEventListener("click", ()=>{
+    inputScreen.innerText += arrayOfObjectKeys[10]["button value"]
 })
