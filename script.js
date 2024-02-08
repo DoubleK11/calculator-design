@@ -240,11 +240,37 @@ equal.addEventListener("click", ()=> {
    // inputScreen.innerText += arrayOfObjectKeys[15]["button value"];
 
    //I need code that will perfom operations when i run this code bloc.
-   let output =  inputScreen.innerText.split("");
-   const regex = /\+\-*/gi
-   console.log(output)
-   let value = parseInt(output[0])
-   console.log(value)
+   
+   let output = inputScreen.innerText.split("");
+       output.shift();
+      // output.sort(); //commented out for testing the loop
+      // output.shift();
+       //output.toString();
+       //let answer = parseInt(output[0]) + parseInt(output[1])
+       let answer;
+       for(let i = 0; i < output.length; i++ ) {
+        /*
+          with the randomIndex variable I am trying to
+          create randomnes for when i try to input 
+          different arithmatic operators in the calculator
+
+          This loop is suppod to handle arithmatic operations
+        */
+        let randomIndex = Math.floor(Math.random() * output.length);
+          if(output[randomIndex] === "+") {
+                   output.shift();
+                   answer = parseInt(output[randomIndex]) + parseInt(output[randomIndex])
+          }else if(output[randomIndex] === "*") {
+                   output.shift();
+                   answer = parseInt(output[randomIndex]) * parseInt(output[randomIndex]);
+          }
+       }
+
+       
+
+   console.log(answer)
+  // return answer
+   
 })
 plus.addEventListener("click", ()=> {
     inputScreen.innerText += arrayOfObjectKeys[16]["button value"];
